@@ -17,6 +17,7 @@ public class Dog extends Animal {
 		Animal l = dog.debug();
 		dog.makeSomeNoise();
 		l.d();
+		l.name = "asd";
 	}
 
 }

@@ -15,12 +15,25 @@ public abstract class Animal {
 		return this;
 	}
 
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		Animal l = dog.debug();
+		dog.makeSomeNoise();
+		l.d();
+		l.name = "asd";
+		l.d();
+
+		// The moethod d() from type Animal is not visible
+		// dog.d();
+
+	}
+
 	abstract void show();
 
-	 void d(){
+	private void d() {
 		System.out.println("Dogii");
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Animal name: " + name + "\n";
